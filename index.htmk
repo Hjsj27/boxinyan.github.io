@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介绍 - 薄昕炎</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #f8f9fa;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin: 0 auto 20px;
+            background: url('boxinyan.png') center/cover no-repeat;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        .age {
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: normal;
+        }
+        section {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        h2 {
+            color: #2575fc;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4f8;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin-left: 10px;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            height: 90%;
+            width: 3px;
+            background: #6a11cb;
+        }
+        .timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #2575fc;
+            border: 3px solid #6a11cb;
+        }
+        .timeline-year {
+            font-weight: bold;
+            color: #6a11cb;
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f5f9;
+            color: #666;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 30px 15px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-img"></div>
+            <h1>薄昕炎</h1>
+            <div class="subtitle">"量子计算先锋"</div>
+            <div class="age">32岁</div>
+        </header>
+
+        <section id="early-life">
+            <h2>早年经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1995-2001</div>
+                    <p>空白</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2002</div>
+                    <p>空白</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2003-2006</div>
+                    <p>空白</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>教育背景</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2007-2011</div>
+                    <p><strong>佳木斯大学</strong> · 本科生</p>
+                    <p>师从著名量子物理学家陈教授，大三时在《Physical Review Letters》发表关于量子退相干抑制的论文。</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2011-2016</div>
+                    <p><strong>麻省理工学院</strong> · 量子计算博士</p>
+                    <p>开发出"Li-Qubit"量子比特稳定技术，突破量子计算机持续运算时间纪录，获IEEE最佳博士论文奖。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="honors">
+            <h2>荣誉与美称</h2>
+            <ul style="list-style: none;">
+                <li style="padding: 10px; background: #f0f7ff; margin-bottom: 10px; border-left: 4px solid #6a11cb;">
+                    <strong>"量子计算先锋"</strong> - 因突破性量子门设计获《Nature》2018年度十大科学人物称号
+                </li>
+                <li style="padding: 10px; background: #f0f7ff; margin-bottom: 10px; border-left: 4px solid #2575fc;">
+                    <strong>"中国青年科学家奖"</strong> - 2020年因量子算法研究获得国家级科技表彰
+                </li>
+                <li style="padding: 10px; background: #f0f7ff; margin-bottom: 10px; border-left: 4px solid #6a11cb;">
+                    <strong>IEEE Medal of Honor</strong> - 史上最年轻获得者（2023年）
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2025 李思远人物档案 | 设计参考：HTML5个人模板[1,5](@ref)</p>
+        </footer>
+    </div>
+</body>
+</html>
